@@ -8,7 +8,7 @@
       <div class="navbar-brand">
          <a
             class="navbar-item"
-            href="/"
+            href="/spamemo/"
          >
             <img
                src="~assets/nyaco.png"
