@@ -24,6 +24,7 @@ export default {
 
     methods: {
         delConfirm() {
+            const that = this;
             this.$buefy.dialog.confirm({
                 title: 'メモの削除確認',
                 message: 'このメモを削除します。',
@@ -34,9 +35,7 @@ export default {
                 onConfirm: async function() {
                     var db = await MemoDB.connect();
                     db.remove(this.props.memoId);
-                    //this.$router.push('/memos/1/?removed=1');
-                    //ここではthisがbuefy.dialogのものに置き換わっておりthis.$router.push()を呼び出せない
-                    location.href = '/memos/1/?removed=1';//苦肉の策
+                    that.$router.push('/memos/1/?removed=1');
                 }
             });
         }
