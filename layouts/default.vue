@@ -24,7 +24,7 @@
    <!-- footer -->
    <footer class="footer">
       <div class="content has-text-centered">
-         <p>footer</p>
+         <p>spamemo by rkwmt.</p>
       </div>
    </footer>
 </div>
