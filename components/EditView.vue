@@ -7,7 +7,7 @@
 
    <b>{{ labeltxt }}</b>
    <b-field id="inptxtarea">
-      <b-input type="textarea" v-model="inptxt">{{ inptxt }}</b-input>
+      <b-input type="textarea" v-model="inptxt" rows="13">{{ inptxt }}</b-input>
    </b-field>
    <div v-if="memoId==0" class="buttons">
       <b-button type="is-primary" @click="saveNewMemo">Save</b-button>
