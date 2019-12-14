@@ -1,21 +1,32 @@
-# spamemo
+# SpaMemo
 
-> first spa project
+> a simple memo application for smartphone.
 
-## Build Setup
+## Description/本アプリについて
+スマートフォンブラウザ向けのシンプルなメモ帳アプリケーションです。
+Webブラウザ上で動作し、スマートフォン(iOS,Android)であればホーム画面へ追加することでアプリのように使うことができます。
+PWAによりホーム画面へ追加後はオフライン環境でも利用可能です。
+メモデータは端末内に保存されます。(IndexedDB)
+
+## Disclaimer/免責事項
+1. 本アプリを使用したことによる一切の損害について、開発者は責任を負いません。
+2. 本アプリについてあらゆる利用、ソース改変、再配布を許可します。
+
+## Build Setup/インストール手順
 
 ``` bash
-# install dependencies
+# 必要なモジュールのインストール
 $ npm run install
+(or $ npm install )
 
-# serve with hot reload at localhost:3000
+# ローカルPC上での開発環境起動
 $ npm run dev
 
-# build for production and launch server
+# 本番サーバー上でのビルド&サーバー起動
 $ npm run build
 $ npm run start
 
-# generate static project
+# 静的ファイルへの書き出し
 $ npm run generate
 ```
 
